@@ -6,6 +6,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 const { MONGODB_URI } = require("./config/connection");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
+const practiceRoutes =("./routes/practice");
 const app = express();
 
 const store = new MongoDBStore({
@@ -40,5 +41,6 @@ app.use(express.static("./public"));
 
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
+
 
 module.exports = app;

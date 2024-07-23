@@ -15,13 +15,13 @@ router.post('/',calculate-time, async (req,res) => {
     });
     
     try{
-        await practice.save();
+        await practice.save(); return
         res.status(201).json({timeInSeconds});
     } catch (err) {
         res.status(500).json({error: 'Error saving trip data'});
     }
 });
-
+//not sure about this?
 router.get('/', async (req,res) => {
     const calculations = await Calculation.find();
     res.json(calculations);

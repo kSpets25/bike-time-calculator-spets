@@ -18,21 +18,9 @@
   </form>
 
   <form method="post" action="/calculatedTime">
-    <label for="add">Bike Time:</label>
-    <input type="number" name="calculatedTime" id="add">
-    <button type="submit">Calculate</button>
+    <label for="add">Bike Time:</label> 
   </form>
-
-  <ul>
-    {{#each practice}}
-      <li 
-        data-id="{{id}}"
-        data-done="{{done}}"
-        {{#if done}} class="done" {{/if}}
-        >
-        {{time}}
-      </li>
-    {{/each}}
-  <ul>
   <p id="result">Logged Bike Time Results:</p>
+ 
+  
 </main>

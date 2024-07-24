@@ -4,4 +4,23 @@
   <p>You should only be able to see this page if logged in.</p>
   <p>Currently, you are {{#unless isLoggedIn}} NOT {{/unless}} logged in.</p>
   <p>Use the header above to {{#if isLoggedIn}} logout{{else}} login or create an account{{/if}}.</p>
+
+   <h1>Bike Time Calculator</h1>
+  <h4>Enter your information</h4>
+  <form id="calc-form">
+    <label for ="distance">Distance (mi):</label>
+    <input type ="number" id="distance" name="distance"><br><br>
+
+    <label for"speed">Speed (mph):</label>
+    <input type ="number" id="speed" name="speed"><br><br>
+
+    <button "submit">Calculate</button><br><br>
+  </form>
+
+  <form method="post" action="/calculatedTime">
+    <label for="add">Bike Time:</label> 
+  </form>
+  <p id="result">Logged Bike Time Results:</p>
+ 
+  
 </main>

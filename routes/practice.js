@@ -4,7 +4,7 @@ const checkAuth = require("../middleware/auth");
 
 
 // My TODO: create the route and calculation for time using distance and speed.
-router.post('/',calculate-time, async (req,res) => {
+router.post("/calculate-time", async (req,res) => {
     const {distance, speed} = req.body;
     const timeInSeconds = distance / speed;
     

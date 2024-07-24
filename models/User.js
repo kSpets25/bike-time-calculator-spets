@@ -1,4 +1,4 @@
-const { Schema, model, models } = require("mongoose");
+const { Schema, SchemaTypes, model, models } = require("mongoose");
 const bcrypt = require("bcrypt");
 
 const UserSchema = new Schema(
@@ -14,6 +14,12 @@ const UserSchema = new Schema(
       minLength: 5,
       maxLength: 200,
     },
+    practices: [
+      {
+      type: SchemaTypes.ObjectId,
+      ref: "Practice"
+    }
+  ]
   },
   {
     methods: {

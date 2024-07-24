@@ -1,4 +1,6 @@
 const User = require("./User");
+const Practice = require("./practice");
 
-module.exports = { User };
+
+module.exports = { User, Practice};
 

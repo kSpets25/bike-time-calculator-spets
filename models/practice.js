@@ -16,4 +16,4 @@ const practiceSchema = new Schema({
     }
 })
 
-module.exports = mongoose.model('practice', practiceSchema);
+module.exports = mongoose.model('Practice', practiceSchema);
